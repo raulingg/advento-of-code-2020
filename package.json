@@ -4,7 +4,7 @@
   "description": "After saving Christmas __five years in a row__, you've decided to take a vacation at a nice resort on a tropical island. Surely, Christmas will go on without you.",
   "main": "index.js",
   "scripts": {
-    "test": "jest ."
+    "test": "jest . --coverage"
   },
   "author": "Raul Quispe <relaxedchild@gmail.com>",
   "license": "MIT",
