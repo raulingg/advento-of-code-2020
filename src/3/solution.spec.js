@@ -1,9 +1,7 @@
-const { solvePart1 } = require('./solution');
+const { solvePart1, solvePart2 } = require('./solution');
 
 describe('Day 3: Toboggan Trajectory::', () => {
-  describe('Part 1::', () => {
-    it('should return the exact number of trees ', () => {
-      const puzzle = `..##.........##.........##.........##.........##.........##.......
+  const puzzle = `..##.........##.........##.........##.........##.........##.......
 #...#...#..#...#...#..#...#...#..#...#...#..#...#...#..#...#...#..
 .#....#..#..#....#..#..#....#..#..#....#..#..#....#..#..#....#..#.
 ..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#..#.#...#.#
@@ -14,8 +12,15 @@ describe('Day 3: Toboggan Trajectory::', () => {
 #.##...#...#.##...#...#.##...#...#.##...#...#.##...#...#.##...#...
 #...##....##...##....##...##....##...##....##...##....##...##....#
 .#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#.#..#...#.#`;
-
+  describe('Part 1::', () => {
+    it('should return the exact number of trees', () => {
       expect(solvePart1(puzzle)).toBe(7);
+    });
+  });
+
+  describe('Part 2::', () => {
+    it('should return the multiplication of each finding', () => {
+      expect(solvePart2(puzzle)).toBe(336);
     });
   });
 });
